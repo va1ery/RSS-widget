@@ -7,10 +7,10 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>OSP dayly</name>
+    <name>OSP daily</name>
 
     <description>
-        OSP dayly news. 
+        OSP daily news. 
     </description>
 
     <author href="https://build.phonegap.com" email="valery.gourov@gmail.com">
