@@ -8,9 +8,9 @@ $.ajaxSetup({
 
 //EDIT THESE LINES
 //Title of the blog
-var TITLE = "Ведомости.Технологии";
+var TITLE = "OSPNews.Хроника дня";
 //RSS url
-var RSS = "http://www.vedomosti.ru/rss/themes/tech.xml";
+var RSS = "http://www.osp.ru/rss/news.rss";
 //Stores entries
 var entries = [];
 var selectedEntry = "";
