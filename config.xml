@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.phonegap.osp"
+        id          = "com.phonegap.cterra"
         versionCode = "10" 
         version     = "1.0.0" >
 
     <!-- versionCode is optional and Android only -->
 
-    <name>OSP daily</name>
+    <name>CTERRA daily</name>
 
     <description>
-        OSP daily news. 
+        CTERRA news. 
     </description>
 
     <author href="https://build.phonegap.com" email="valery.gourov@gmail.com">
