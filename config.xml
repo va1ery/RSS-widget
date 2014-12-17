@@ -7,10 +7,10 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>OSP daily</name>
+    <name>Moscow Job Offerings</name>
 
     <description>
-        OSP daily news. 
+        Job Offerings. 
     </description>
 
     <author href="https://build.phonegap.com" email="valery.gourov@gmail.com">
