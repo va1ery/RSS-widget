@@ -8,9 +8,9 @@ $.ajaxSetup({
 
 //EDIT THESE LINES
 //Title of the blog
-var TITLE = "OSPNews.Хроника дня";
+var TITLE = "КОМПЬЮЛЕНТА";
 //RSS url
-var RSS = "http://www.osp.ru/rss/news.rss";
+var RSS = "http://feeds.feedburner.com/ct_news?format=xml";
 //Stores entries
 var entries = [];
 var selectedEntry = "";
