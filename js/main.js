@@ -8,7 +8,7 @@ $.ajaxSetup({
 
 //EDIT THESE LINES
 //Title of the blog
-var TITLE = "Вакансии в Москве";
+var TITLE = "Mil Photo";
 //RSS url
 var RSS = "http://strategypage.com/index.xml";
 //Stores entries
