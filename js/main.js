@@ -10,7 +10,7 @@ $.ajaxSetup({
 //Title of the blog
 var TITLE = "Вакансии в Москве";
 //RSS url
-var RSS = "http://khimki.hh.ru/search/vacancy/rss?saved_search_id=98001&area=1&search_period=30&no_magic=true&salary=2500&currency_code=USD&specialization=1.296&specialization=1.232&specialization=1.30&order_by=publication_time&only_with_salary=true";
+var RSS = "http://strategypage.com/index.xml";
 //Stores entries
 var entries = [];
 var selectedEntry = "";
