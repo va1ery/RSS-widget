@@ -8,9 +8,9 @@ $.ajaxSetup({
 
 //EDIT THESE LINES
 //Title of the blog
-var TITLE = "Вестник связи";
+var TITLE = "Растырком!";
 //RSS url
-var RSS = "http://vestnik-sviazy.ru/m/e107_plugins/rss_menu/rss.php?news.2.nws";
+var RSS = "http://rastyrcom.livejournal.com/data/rss";
 //Stores entries
 var entries = [];
 var selectedEntry = "";
