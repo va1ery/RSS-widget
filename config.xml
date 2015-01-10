@@ -13,7 +13,7 @@
         Job Offerings. 
     </description>
     
-    <gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.8" />
+    <gap:plugin name="nl.x-services.plugins.socialsharing" />
 
     <author href="https://build.phonegap.com" email="valery.gourov@gmail.com">
         VG 
