@@ -14,7 +14,7 @@
     </description>
     
     <gap:plugin name="nl.x-services.plugins.socialsharing" />
-
+<gap:plugin name="com.phonegap.plugin.statusbar" />
     <author href="https://build.phonegap.com" email="valery.gourov@gmail.com">
         VG 
     </author>
