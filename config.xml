@@ -13,8 +13,9 @@
         Job Offerings. 
     </description>
     
-    <gap:plugin name="nl.x-services.plugins.socialsharing" />
-<button onclick="window.plugins.socialsharing.share('Message only')">message only</button>
+    
+    <gap:plugin name="nl.x-services.plugins.socialsharing" source="plugins.cordova.io" />
+    
     <author href="https://build.phonegap.com" email="valery.gourov@gmail.com">
         VG 
     </author>
