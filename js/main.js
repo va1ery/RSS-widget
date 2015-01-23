@@ -8,24 +8,62 @@ $.ajaxSetup({
 
 //EDIT THESE LINES
 //Title of the blog
-var TITLE = "Вакансии в Москве";
+var TITLE = "Вестник связи";
 //RSS url
-var RSS = "http://khimki.hh.ru/search/vacancy/rss?saved_search_id=98001&area=1&search_period=30&no_magic=true&salary=2500&currency_code=USD&specialization=1.296&specialization=1.232&specialization=1.30&order_by=publication_time&only_with_salary=true";
+var RSS = "http://vestnik-sviazy.ru/m/e107_plugins/rss_menu/rss.php?news.2.nws";
 //Stores entries
 var entries = [];
 var selectedEntry = "";
 
-//onDeviceReady: function() {
-//      adbuddiz.setAndroidPublisherKey("TEST_PUBLISHER_KEY_ANDROID");
-//      adbuddiz.setIOSPublisherKey("TEST_PUBLISHER_KEY_IOS");
-//      adbuddiz.cacheAds();
-//      adbuddiz.showAd();
-//   }
-   
 //listen for detail links
 $(".contentLink").live("click", function() {
 	selectedEntry = $(this).data("entryid");
 });
+
+    // deviceready Event
+    //
+
+var app = {
+    // Application Constructor
+    initialize: function() {
+        this.bindEvents();
+    },
+    // Bind Event Listeners
+    //
+    // Bind any events that are required on startup. Common events are:
+    // 'load', 'deviceready', 'offline', and 'online'.
+    bindEvents: function() {
+        document.addEventListener('deviceready', this.onDeviceReady, false);
+    },
+    // The scope of 'this' is the event. In order to call the 'receivedEvent'
+    // function, we must explicitly call 'app.receivedEvent(...);'
+    
+//	onDeviceReady: function() {
+//        app.receivedEvent('deviceready');
+//    },
+
+	onDeviceReady: function() {
+	adbuddiz.setAndroidPublisherKey("a146a585-4fa7-4de8-a38c-63c311311b3c");
+      	adbuddiz.setIOSPublisherKey("TEST_PUBLISHER_KEY_IOS");
+      	adbuddiz.cacheAds();
+	adbuddiz.showAd();
+        app.receivedEvent('deviceready');
+   },
+
+    // Update DOM on a Received Event
+    receivedEvent: function(id) {
+        var parentElement = document.getElementById(id);
+        var listeningElement = parentElement.querySelector('.listening');
+        var receivedElement = parentElement.querySelector('.received');
+
+        listeningElement.setAttribute('style', 'display:none;');
+        receivedElement.setAttribute('style', 'display:block;');
+
+        console.log('Received Event: ' + id);
+    }
+};
+
+app.initialize();
 
 //Listen for main page
 $("#mainPage").live("pageinit", function() {
