@@ -15,6 +15,7 @@
     
     
     <gap:plugin name="com.purplebrain.adbuddiz.sdk" source="plugins.cordova.io" />
+    <gap:plugin name="nl.x-services.plugins.socialsharing" source="plugins.cordova.io" />
     
     <author href="https://build.phonegap.com" email="valery.gourov@gmail.com">
         VG 
