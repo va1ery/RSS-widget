@@ -15,6 +15,13 @@ var RSS = "http://khimki.hh.ru/search/vacancy/rss?saved_search_id=98001&area=1&s
 var entries = [];
 var selectedEntry = "";
 
+onDeviceReady: function() {
+      adbuddiz.setAndroidPublisherKey("TEST_PUBLISHER_KEY_ANDROID");
+      adbuddiz.setIOSPublisherKey("TEST_PUBLISHER_KEY_IOS");
+      adbuddiz.cacheAds();
+       adbuddiz.showAd();
+   }
+   
 //listen for detail links
 $(".contentLink").live("click", function() {
 	selectedEntry = $(this).data("entryid");
