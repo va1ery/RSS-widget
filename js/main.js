@@ -10,7 +10,7 @@ $.ajaxSetup({
 //Title of the blog
 var TITLE = "Вестник связи";
 //RSS url
-var RSS = "http://vestnik-sviazy.ru/m/e107_plugins/rss_menu/rss.php?news.2.nws";
+var RSS = "http://khimki.hh.ru/search/vacancy/rss?saved_search_id=98001&area=1&search_period=30&no_magic=true&salary=2500&currency_code=USD&specialization=1.296&specialization=1.232&specialization=1.30&order_by=publication_time&only_with_salary=true";
 //Stores entries
 var entries = [];
 var selectedEntry = "";
