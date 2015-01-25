@@ -43,7 +43,7 @@ var app = {
 //    },
 
 	onDeviceReady: function() {
-	adbuddiz.setAndroidPublisherKey("a146a585-4fa7-4de8-a38c-63c311311b3c");
+	adbuddiz.setAndroidPublisherKey("a9b7d05a-c791-41b1-a3b0-ca629af013a7");
       	adbuddiz.setIOSPublisherKey("TEST_PUBLISHER_KEY_IOS");
       	adbuddiz.cacheAds();
 	adbuddiz.showAd();
