@@ -10,7 +10,7 @@ $.ajaxSetup({
 //Title of the blog
 var TITLE = "ИТ-вакансии в Москве";
 //RSS url
-var RSS = "http://khimki.hh.ru/search/vacancy/rss?saved_search_id=98001&area=1&search_period=30&no_magic=true&salary=2500&currency_code=USD&specialization=1.296&specialization=1.232&specialization=1.30&order_by=publication_time&only_with_salary=true";
+var RSS = "http://http://www.itnews.com/feed";
 //Stores entries
 var entries = [];
 var selectedEntry = "";
@@ -42,11 +42,14 @@ var app = {
 //        app.receivedEvent('deviceready');
 //    },
 
+//	onDeviceReady: function() {
+//	adbuddiz.setAndroidPublisherKey("a9b7d05a-c791-41b1-a3b0-ca629af013a7");
+//      	adbuddiz.setIOSPublisherKey("TEST_PUBLISHER_KEY_IOS");
+//      	adbuddiz.cacheAds();
+//	adbuddiz.showAd();
+//        app.receivedEvent('deviceready');
+//   },
 	onDeviceReady: function() {
-	adbuddiz.setAndroidPublisherKey("a9b7d05a-c791-41b1-a3b0-ca629af013a7");
-      	adbuddiz.setIOSPublisherKey("TEST_PUBLISHER_KEY_IOS");
-      	adbuddiz.cacheAds();
-	adbuddiz.showAd();
         app.receivedEvent('deviceready');
    },
 
