@@ -8,9 +8,9 @@ $.ajaxSetup({
 
 //EDIT THESE LINES
 //Title of the blog
-var TITLE = "ИТ-вакансии в Москве";
+var TITLE = "ИТ-новости отовсюду";
 //RSS url
-var RSS = "http://http://www.itnews.com/feed";
+var RSS = "http://www.itnews.com/feed";
 //Stores entries
 var entries = [];
 var selectedEntry = "";
@@ -42,14 +42,11 @@ var app = {
 //        app.receivedEvent('deviceready');
 //    },
 
-//	onDeviceReady: function() {
-//	adbuddiz.setAndroidPublisherKey("a9b7d05a-c791-41b1-a3b0-ca629af013a7");
-//      	adbuddiz.setIOSPublisherKey("TEST_PUBLISHER_KEY_IOS");
-//      	adbuddiz.cacheAds();
-//	adbuddiz.showAd();
-//        app.receivedEvent('deviceready');
-//   },
 	onDeviceReady: function() {
+	adbuddiz.setAndroidPublisherKey("a9b7d05a-c791-41b1-a3b0-ca629af013a7");
+      	adbuddiz.setIOSPublisherKey("TEST_PUBLISHER_KEY_IOS");
+      	adbuddiz.cacheAds();
+	adbuddiz.showAd();
         app.receivedEvent('deviceready');
    },
 
