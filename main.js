@@ -22,6 +22,11 @@ $(".contentLink").live("click", function() {
 
 
 onDeviceReady: function() {
+	adbuddiz.setAndroidPublisherKey("a9b7d05a-c791-41b1-a3b0-ca629af013a7");
+      	adbuddiz.setIOSPublisherKey("TEST_PUBLISHER_KEY_IOS");
+      	adbuddiz.cacheAds();
+	adbuddiz.showAd();
+        app.receivedEvent('deviceready');
    }
 
 
