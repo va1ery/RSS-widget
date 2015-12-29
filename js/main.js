@@ -38,17 +38,17 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     
-//	onDeviceReady: function() {
-//        app.receivedEvent('deviceready');
-//    },
-
 	onDeviceReady: function() {
-	adbuddiz.setAndroidPublisherKey("a9b7d05a-c791-41b1-a3b0-ca629af013a7");
-      	adbuddiz.setIOSPublisherKey("TEST_PUBLISHER_KEY_IOS");
-      	adbuddiz.cacheAds();
-	adbuddiz.showAd();
         app.receivedEvent('deviceready');
-   },
+    },
+
+//	onDeviceReady: function() {
+//	adbuddiz.setAndroidPublisherKey("a9b7d05a-c791-41b1-a3b0-ca629af013a7");
+//      	adbuddiz.setIOSPublisherKey("TEST_PUBLISHER_KEY_IOS");
+//      	adbuddiz.cacheAds();
+//	adbuddiz.showAd();
+//        app.receivedEvent('deviceready');
+//   },
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
