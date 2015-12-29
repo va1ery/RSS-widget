@@ -10,7 +10,7 @@ $.ajaxSetup({
 //Title of the blog
 var TITLE = "ИТ-новости отовсюду";
 //RSS url
-var RSS = "http://www.itnews.com/feed";
+var RSS = "http://static.feed.rbc.ru/rbc/internal/rss.rbc.ru/cnews.ru/mainnews.rss";
 //Stores entries
 var entries = [];
 var selectedEntry = "";
