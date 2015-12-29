@@ -16,6 +16,5 @@
     <author href="https://build.phonegap.com" email="support@phonegap.com">
       Hardeep Shoker
     </author>
-    <gap:plugin name="nl.x-services.plugins.socialsharing" source="plugins.cordova.io" />
     
 </widget>
