@@ -1,2 +1,2 @@
-RSS-widget
+RSS-widget  for MForum.ru
 ==========
