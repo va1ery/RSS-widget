@@ -10,7 +10,7 @@ $.ajaxSetup({
 //Title of the blog
 var TITLE = "Вестник связи";
 //RSS url
-var RSS = "http://vestnik-sviazy.ru/m/e107_plugins/rss_menu/rss.php?news.2.nws";
+var RSS = "http://www.mforum.ru/rss/news.xml";
 //Stores entries
 var entries = [];
 var selectedEntry = "";
@@ -22,10 +22,10 @@ $(".contentLink").live("click", function() {
 
 
 onDeviceReady: function() {
-	adbuddiz.setAndroidPublisherKey("a9b7d05a-c791-41b1-a3b0-ca629af013a7");
-      	adbuddiz.setIOSPublisherKey("TEST_PUBLISHER_KEY_IOS");
-      	adbuddiz.cacheAds();
-	adbuddiz.showAd();
+//	adbuddiz.setAndroidPublisherKey("a9b7d05a-c791-41b1-a3b0-ca629af013a7");
+//      	adbuddiz.setIOSPublisherKey("TEST_PUBLISHER_KEY_IOS");
+//      	adbuddiz.cacheAds();
+//	adbuddiz.showAd();
         app.receivedEvent('deviceready');
    }
 
