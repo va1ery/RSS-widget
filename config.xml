@@ -17,6 +17,5 @@
       Hardeep Shoker
     </author>
     <gap:plugin name="nl.x-services.plugins.socialsharing" source="plugins.cordova.io" />
-    <!--gap:plugin name="com.purplebrain.adbuddiz.sdk" source="plugins.cordova.io" /-->
-
+    
 </widget>
