@@ -16,7 +16,7 @@
     <author href="https://build.phonegap.com" email="support@phonegap.com">
         Hardeep Shoker 
     </author>
-<plugin name="com.purplebrain.adbuddiz.sdk" source="plugins.cordova.io" spec="2.3.5" />
+<!--plugin name="com.purplebrain.adbuddiz.sdk" source="plugins.cordova.io" spec="2.3.5" /-->
 <plugin name="nl.x-services.plugins.socialsharing" source="plugins.cordova.io" spec="4.3.13" />
 
 </widget>
