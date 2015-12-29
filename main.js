@@ -8,7 +8,7 @@ $.ajaxSetup({
 
 //EDIT THESE LINES
 //Title of the blog
-var TITLE = "Вестник связи";
+var TITLE = "Мобильный форум";
 //RSS url
 var RSS = "http://www.mforum.ru/rss/news.xml";
 //Stores entries
