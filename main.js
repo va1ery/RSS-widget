@@ -12,7 +12,7 @@ var TITLE = "BaseALT News";
 //RSS url
 //
 var RSS = "https://www.basealt.ru/feed.rss";
-//http://www.mforum.ru/rss/news.xml";
+//
 //Stores entries
 var entries = [];
 var selectedEntry = "";
