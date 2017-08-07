@@ -8,9 +8,11 @@ $.ajaxSetup({
 
 //EDIT THESE LINES
 //Title of the blog
-var TITLE = "Мобильный форум";
+var TITLE = "BaseALT News";
 //RSS url
-var RSS = "http://www.mforum.ru/rss/news.xml";
+//
+var RSS = "https://www.basealt.ru/feed.rss";
+//http://www.mforum.ru/rss/news.xml";
 //Stores entries
 var entries = [];
 var selectedEntry = "";
@@ -19,15 +21,6 @@ var selectedEntry = "";
 $(".contentLink").live("click", function() {
 	selectedEntry = $(this).data("entryid");
 });
-
-
-onDeviceReady: function() {
-//	adbuddiz.setAndroidPublisherKey("a9b7d05a-c791-41b1-a3b0-ca629af013a7");
-//      	adbuddiz.setIOSPublisherKey("TEST_PUBLISHER_KEY_IOS");
-//      	adbuddiz.cacheAds();
-//	adbuddiz.showAd();
-        app.receivedEvent('deviceready');
-   }
 
 
 //Listen for main page
