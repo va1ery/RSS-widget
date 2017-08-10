@@ -1,42 +1,108 @@
-﻿<!DOCTYPE html> 
-<html> 
-    <head> 
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title></title> 
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
-    <script src="main.js"></script>
-    <script src="phonegap.js"></script>
+<!DOCTYPE html> 
+<html data-brackets-id='1'> 
+    <head data-brackets-id='2'> 
+    <meta data-brackets-id='3' name="viewport" content="width=device-width, initial-scale=1">    
+    <title data-brackets-id='4'></title> 
+    <link data-brackets-id='5' rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script data-brackets-id='6' type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script data-brackets-id='7' src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+<!--script src="main.js"></script-->
+        
+    <script data-brackets-id='8' type="text/javascript">
+$.ajaxSetup({
+	error:function(x,e,errorThrown) {
+		console.log(x.getStatusCode());
+		$("#status").prepend("Error!");		
+	}
+});
+
+//EDIT THESE LINES
+//Title of the blog
+var TITLE = "BaseALT News";
+//RSS url
+//
+var RSS = "https://www.basealt.ru/feed.rss";
+//
+//Stores entries
+var entries = [];
+var selectedEntry = "";
+
+//listen for detail links
+$(".contentLink").live("click", function() {
+	selectedEntry = $(this).data("entryid");
+});
+
+
+//Listen for main page
+$("#mainPage").live("pageinit", function() {
+	//Set the title
+	$("h1", this).text(TITLE);
+
+	$.get(RSS, {}, function(res, code) {
+		entries = [];
+		var xml = $(res);
+		var items = xml.find("item");
+		$.each(items, function(i, v) {
+			entry = { 
+				title:$(v).find("title").text(), 
+				link:$(v).find("link").text(), 
+				description:$.trim($(v).find("description").text())
+			};
+			entries.push(entry);
+		});
+
+		//now draw the list
+		var s = '';
+		$.each(entries, function(i, v) {
+			s += '<li><a href="#contentPage" class="contentLink" data-entryid="'+i+'">' + v.title + '</a></li>';
+		});
+		$("#linksList").html(s);
+		$("#linksList").listview("refresh");
+	});
+
+});
+
+//Listen for the content page to load
+$("#contentPage").live("pageshow", function(prepage) {
+	//Set the title
+	$("h1", this).text(entries[selectedEntry].title);
+	var contentHTML = "";
+	contentHTML += entries[selectedEntry].description;
+	contentHTML += '<p/><a href="'+entries[selectedEntry].link + '">Источник</a>';
+	$("#entryText",this).html(contentHTML);
+});
+        </script>
+        
+        
 </head> 
-<body> 
+<body data-brackets-id='9'> 
 
-<div data-role="page" id="mainPage">
+<div data-brackets-id='10' data-role="page" id="mainPage">
 
-    <div data-role="header">
-        <h1></h1>
+    <div data-brackets-id='11' data-role="header">
+        <h1 data-brackets-id='12'></h1>
     </div>
 
-    <div data-role="content">  
-		<div id="status"></div>  
-        <ul id="linksList" data-role="listview" data-inset="true"></ul>
+    <div data-brackets-id='13' data-role="content">  
+		<div data-brackets-id='14' id="status"></div>  
+        <ul data-brackets-id='15' id="linksList" data-role="listview" data-inset="true"></ul>
     </div>
 
-    <div data-role="footer">
-        <h4>Based on Raymond Camden's RSS Reader</h4>
+    <div data-brackets-id='16' data-role="footer">
+        <h4 data-brackets-id='17'>Based on Raymond Camden's RSS Reader</h4>
     </div>
 
     
 </div>
 
-<div data-role="page" id="contentPage">
+<div data-brackets-id='18' data-role="page" id="contentPage">
 
-    <div data-role="header">
-        <a href="#mainPage" data-rel="back">назад</a>
-        <h1></h1>
+    <div data-brackets-id='19' data-role="header">
+        <a data-brackets-id='20' href="#mainPage" data-rel="back">назад</a>
+        <h1 data-brackets-id='21'></h1>
     </div>
 
-    <div data-role="content" id="entryText">
+    <div data-brackets-id='22' data-role="content" id="entryText">
     </div>
         
 </div>
